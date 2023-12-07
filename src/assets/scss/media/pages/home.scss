@@ -1,0 +1,53 @@
+@media #{$sm} {
+  .home {
+    &__users {
+
+      grid-template-columns: repeat(3, 282rem);
+    }
+  }
+}
+
+@media #{$md} {
+  .home {
+    &__users {
+      grid-template-columns: repeat(2, 344rem);
+      gap: 16rem;
+    }
+
+    &__bg,
+    &__img,
+    &__content {
+      max-height: 500rem;
+    }
+  }
+}
+
+@media #{$xs} {
+  .home {
+    &__users {
+width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20rem;
+    }
+
+    &__info {
+      padding-inline: 16rem;
+      top: 40rem;
+      transform: translate(-50%, 0rem);
+    }
+
+    &__title {
+      -webkit-line-clamp: 3;
+    }
+
+    &__text {
+      -webkit-line-clamp: 7;
+    }
+
+    &__request {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}

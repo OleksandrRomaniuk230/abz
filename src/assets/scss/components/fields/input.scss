@@ -1,0 +1,56 @@
+.input {
+  position: relative;
+
+  input {
+    font: $font-nun-reg-sm;
+    color: $color-dark;
+    width: 100%;
+    border-radius: 4rem;
+    border: 1rem solid $color-border;
+    background: $bg;
+    padding: 13rem 16rem;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: -7rem;
+    left: 16rem;
+    font: $font-nun-reg-xs;
+    color: $color-dark;
+    padding-inline: 1rem;
+    background-color: $bg;
+    transition: all .5s;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    font:$font-nun-reg-xs;
+    color: $placeholder;
+    margin-top: 4rem;
+    padding-left: 16rem;
+  }
+
+  &.has-error {
+    .input {
+      &__label {
+        color: $error
+      }
+    }
+
+    input {
+      border: 1rem solid $error;
+    }
+
+    p {
+      color: $error
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@media #{$sm} {
+  html {
+    font-size: calc(1vw / 10.24);
+  }
+}
+
+@media #{$md} {
+  html {
+    font-size: calc(1vw / 7.68);
+  }
+
+  .container {
+    padding-inline: 32rem;
+  }
+}
+
+@media #{$xs} {
+  html {
+    font-size: calc(1vw / 3.6);
+  }
+  .container {
+    padding-inline: 16rem;
+  }
+}

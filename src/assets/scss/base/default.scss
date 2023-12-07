@@ -1,0 +1,88 @@
+html {
+  /* conversion from px to rem for page scale */
+  font-size: calc(1vw / 25.6);
+  scroll-behavior: smooth;
+}
+
+body {
+  font: $font-nun-reg-sm;
+  color: $color-dark;
+  background-color: $bg;
+}
+
+.container {
+  max-width: 1290rem;
+  width: 100%;
+  padding-inline: 60rem;
+  margin: auto;
+}
+
+.btn {
+  font: $font-nun-reg-sm;
+  color: $color-dark;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 80rem;
+  border: none;
+  padding-block: 5rem;
+  background-color: $default-color;
+  min-width: 100rem;
+  padding-inline: 19rem;
+  cursor: pointer;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: $hover-color;
+    color: $color-dark;
+  }
+
+  &:disabled {
+    background-color: $bg-disabled;
+    color: $color-disabled;
+    pointer-events: none;
+  }
+}
+
+.title {
+  font: $font-nun-reg-lg;
+
+  &--small {
+    font: $font-nun-reg-sm;
+  }
+}
+
+.link {
+  font: $font-nun-reg-sm;
+  color: $color-dark;
+  cursor: pointer;
+}
+
+.form {
+  max-width: 380rem;
+  width: 100%;
+  margin: auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50rem;
+  }
+
+  &__options {
+    margin-top: 25rem;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 7rem;
+    }
+  }
+
+  &__upload {
+    margin-top: 47rem;
+  }
+
+  &__title {
+    margin-bottom: 8rem;
+  }
+}

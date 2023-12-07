@@ -1,0 +1,45 @@
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  cursor: pointer;
+  width: max-content;
+
+  &__input {
+    input {
+      display: none;
+    }
+  }
+
+  &__custom {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: 1rem solid $color-border;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      width: 10rem;
+      height: 10rem;
+      background: $primary-color;
+      border-radius: 100%;
+      opacity: 0;
+    }
+  }
+
+  &__input input:checked+&__custom {
+    border: 1rem solid $primary-color;
+  }
+
+  &__input input:checked+&__custom:before {
+    opacity: 1;
+  }
+}

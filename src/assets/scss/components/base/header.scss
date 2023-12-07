@@ -1,0 +1,22 @@
+.header {
+  padding-block: 12rem;
+  background-color: $color-light;
+
+  &__logo {
+    width: 104rem;
+    height: 26rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: 10rem;
+    gap: 10rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 14rem;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+  border-radius: 10rem;
+  background-color: $color-light;
+  padding: 20rem;
+
+  &__user {
+    border-radius: 70rem;
+    width: 70rem;
+    height: 70rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-align: center;
+    max-width: 280rem;
+  }
+}
