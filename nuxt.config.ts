@@ -105,8 +105,7 @@ export default defineNuxtConfig({
           type: "image/png",
           sizes: "16x16",
           href: "/favicon/favicon-16x16.png",
-        },
-        { rel: "manifest", href: "/favicon/manifest.json" },
+        }
       ],
     },
   },
